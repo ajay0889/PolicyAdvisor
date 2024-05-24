@@ -1113,13 +1113,14 @@
         .mobile-learning-centre>ul li{
             padding: 5px;
         }
-        .back-button svg{
+        .back-button>svg{
             position: relative;
             top: 23px;
-            left: -40px;
+            left: -40px !important;
         }
-        .hide{
-            display: none !important;
+        .mobile-logo a svg{
+            position: relative;
+            left: -70px;
         }
     }
 

@@ -8,9 +8,15 @@
 //   });
 
 
-$(function() {
-  $(".back-button").click(function() {
-    // $(this).toggleClass("hide");
-    $('.mobile-menu-detail-box').toggleClass("hide");
-  });
+// $(function() {
+//   $(".back-button").click(function() {
+//     // $(this).toggleClass("hide");
+//     $('.mobile-menu-detail-box').toggleClass("show");
+//   });
+// });
+
+$(".back-button").click(function (e) {
+  e.preventDefault();
+  $(this).closest(".mobile-menu-detail-box")
+      .removeClass("show");
 });
