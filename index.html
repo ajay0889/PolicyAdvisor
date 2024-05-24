@@ -18,7 +18,7 @@
       <link rel="stylesheet" href="./css/fonts/slick.woff">
    </head>
    <body>
-      <div class="container-fluid top-header">
+      <div class="container-fluid top-header d-none d-lg-block d-md-block">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-9 col-md-12">
@@ -45,8 +45,7 @@
       <!--Header Section START-->
       <nav class="navbar navbar-expand-lg shadow">
          <div class="container p-0">
-            <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                <div class="hamburger-toggle">
                   <div class="hamburger">
                      <span></span>
@@ -55,7 +54,8 @@
                   </div>
                </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbar-content">
+            <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+            <div class="collapse navbar-collapse d-none d-lg-block">
                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                   <li class="nav-item dropdown dropdown-mega position-static">
                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Life Insurance</a>
@@ -744,6 +744,435 @@
                      </ul>
                   </li>
                </ul>
+            </div>
+            <div class="d-lg-none">
+               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="mobile-menu">
+                     <div class="mobile-logo">
+                        <a data-bs-dismiss="offcanvas" aria-label="Close"><svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4" /></svg></a>
+                        <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+                     </div>
+                     <div class="mobile-menu-list">
+                        <div class="mobile-advisor-live">
+                           <img src="./images/call.png" alt="Schedule a call" class="img-fluid">
+                           <h5 class="mobile-live-heading text-white">PolicyAdvisor <span class="badge">LIVE</span></h5>
+                        </div>
+                        <div class="mobile-main-list">
+                           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                              <li class="nav-item dropdown dropdown-mega position-static mobile-menu-list-link">
+                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Life Insurance</a>
+                                 <!--Mobile Menu START-->
+                                 <div class="dropdown-menu shadow mobile-menu-detail-box">
+                                    <div class="mobile-logo">
+                                       <a class="back-button" type="button"><svg width="70" height="70" viewbox="0 0 40 40"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" data-v-16216092=""></path></svg></a>
+                                       <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+                                    </div>
+                                    <div class="mobile-advisor-live">
+                                       <img src="./images/call.png" alt="Schedule a call" class="img-fluid">
+                                       <h5 class="mobile-live-heading text-white">PolicyAdvisor <span class="badge">LIVE</span></h5>
+                                    </div>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Available Products</h2>
+                                    </div>
+                                    <ul class="mobile-list">
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Term Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores, ad repellat odit? Aperiam magni iusto labore?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Whole Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Children's Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>No Medical Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores,</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                    </ul>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Learning Centre</h2>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!--Mobile Menu END-->
+                              </li>
+                              <li class="nav-item dropdown dropdown-mega position-static mobile-menu-list-link">
+                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Mortgage Protection</a>
+                                 <!--Mobile Menu START-->
+                                 <div class="dropdown-menu shadow mobile-menu-detail-box">
+                                    <div class="mobile-logo">
+                                       <a class="back-button" type="button"><svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4" /></svg></a>
+                                       <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+                                    </div>
+                                    <div class="mobile-advisor-live">
+                                       <img src="./images/call.png" alt="Schedule a call" class="img-fluid">
+                                       <h5 class="mobile-live-heading text-white">PolicyAdvisor <span class="badge">LIVE</span></h5>
+                                    </div>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Available Products</h2>
+                                    </div>
+                                    <ul class="mobile-list">
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Term Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores, ad repellat odit? Aperiam magni iusto labore?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Whole Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Children's Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>No Medical Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores,</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                    </ul>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Learning Centre</h2>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!--Mobile Menu END-->
+                              </li>
+                              <li class="nav-item dropdown dropdown-mega position-static mobile-menu-list-link">
+                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Critical Illness</a>
+                                 <!--Mobile Menu START-->
+                                 <div class="dropdown-menu shadow mobile-menu-detail-box">
+                                    <div class="mobile-logo">
+                                       <a class="back-button" type="button"><svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4" /></svg></a>
+                                       <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+                                    </div>
+                                    <div class="mobile-advisor-live">
+                                       <img src="./images/call.png" alt="Schedule a call" class="img-fluid">
+                                       <h5 class="mobile-live-heading text-white">PolicyAdvisor <span class="badge">LIVE</span></h5>
+                                    </div>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Available Products</h2>
+                                    </div>
+                                    <ul class="mobile-list">
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Term Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores, ad repellat odit? Aperiam magni iusto labore?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Whole Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Children's Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>No Medical Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores,</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                    </ul>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Learning Centre</h2>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!--Mobile Menu END-->
+                              </li>
+                              <li class="nav-item dropdown dropdown-mega position-static mobile-menu-list-link">
+                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Health</a>
+                                 <!--Mobile Menu START-->
+                                 <div class="dropdown-menu shadow mobile-menu-detail-box">
+                                    <div class="mobile-logo">
+                                       <a class="back-button" type="button"><svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4" /></svg></a>
+                                       <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+                                    </div>
+                                    <div class="mobile-advisor-live">
+                                       <img src="./images/call.png" alt="Schedule a call" class="img-fluid">
+                                       <h5 class="mobile-live-heading text-white">PolicyAdvisor <span class="badge">LIVE</span></h5>
+                                    </div>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Available Products</h2>
+                                    </div>
+                                    <ul class="mobile-list">
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Term Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores, ad repellat odit? Aperiam magni iusto labore?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Whole Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Children's Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>No Medical Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores,</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                    </ul>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Learning Centre</h2>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!--Mobile Menu END-->
+                              </li>
+                              <li class="nav-item dropdown dropdown-mega position-static mobile-menu-list-link">
+                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Magazine</a>
+                                 <!--Mobile Menu START-->
+                                 <div class="dropdown-menu shadow mobile-menu-detail-box">
+                                    <div class="mobile-logo">
+                                       <a class="back-button" type="button"><svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4" /></svg></a>
+                                       <a class="navbar-brand" href="#"><img src="./images/logo.svg"  alt="Logo Image" width="180" height="27"></a>
+                                    </div>
+                                    <div class="mobile-advisor-live">
+                                       <img src="./images/call.png" alt="Schedule a call" class="img-fluid">
+                                       <h5 class="mobile-live-heading text-white">PolicyAdvisor <span class="badge">LIVE</span></h5>
+                                    </div>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Available Products</h2>
+                                    </div>
+                                    <ul class="mobile-list">
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Term Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores, ad repellat odit? Aperiam magni iusto labore?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Whole Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>Children's Life Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                       <li class="border-bottom my-2">
+                                          <div class="mobile-head">
+                                             <h3>No Medical Insurance</h3>
+                                             <p class="py-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem dignissimos quo maiores,</p>
+                                          </div>
+                                          <div class="mobile-quote-button text-center mb-2"><a>Get Instant Quote</a></div>
+                                       </li>
+                                    </ul>
+                                    <div class="mobile-menu-heading">
+                                       <h2>Learning Centre</h2>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                    <div class="mobile-learning-centre my-2">
+                                       <div class="learning-centre-heading border-bottom">Fundamentals</div>
+                                       <ul>
+                                          <li>What is life insurance?</li>
+                                          <li>Types of life insurance</li>
+                                          <li>Term vs whole life</li>
+                                          <li>What is insurance</li>
+                                          <li>What is whole insurance?</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!--Mobile Menu END-->
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="mobile-accounts-button">
+                           <a href="#">Sign Up</a>
+                           <a href="#">Log In</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </nav>

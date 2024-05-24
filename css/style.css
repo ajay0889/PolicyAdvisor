@@ -754,6 +754,12 @@
         padding: 15px;
         font-size: 1.7em
     }
+    @media screen and (max-width:424px) {
+        .mobile-accounts-button{
+            width: 100% !important;
+        }
+        
+    }
     @media screen and (max-width:767px) {
         .products-list .product-box:hover .product-icon-container {
             opacity: 0;
@@ -950,6 +956,7 @@
         .mobile-table table thead tr:first-child td:nth-child(1) {
             color: #17b3e4;
         }
+        
     }
 
     @media screen and (min-width:768px) {
@@ -962,6 +969,7 @@
             background-color: #f0fcff;
             max-width: 266px
         }
+
     }
 
     @media screen and (min-width:768px) and (max-width:1023px) {
@@ -987,6 +995,131 @@
     @media screen and (max-width:991px) {
         .products-list .product-box {
             padding: 9px 3px
+        }
+        .mobile-logo{
+            min-height: 60px;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+        }
+        .mobile-main-list>ul{
+            max-height: calc(100vh - 100px);
+            overflow: scroll;
+            background-color: #fff;
+            padding-bottom: 250px;
+        }
+        .mobile-advisor-live{
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            justify-content: flex-start;
+            background-color: #001e4a;
+            max-height: 75px;
+            box-sizing: content-box;
+            margin: 0;
+        }
+        .mobile-advisor-live img{
+            width: 100px;
+        }
+        .mobile-live-heading{
+            font-size: 16px;
+            line-height: 18px;
+            padding: 0;
+        }
+        .mobile-menu-list-link{
+            padding: 20px;
+            border-radius: 0;
+            margin: 0;
+            border-bottom: 1px solid #dedede;
+        }
+        .mobile-accounts-button{
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(0);
+            background: #17b3e4;
+            box-sizing: content-box;
+            width: 399px;
+            min-height: 50px;
+        }
+        .mobile-accounts-button a{
+            cursor: pointer;
+            background-color: #fff;
+            color: #17b3e4;
+            font-size: 14px;
+            white-space: nowrap;
+            font-weight: 600;
+            padding: 7px 25px;
+            margin: 0 10px;
+        }
+        .mobile-menu-detail-box{
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100%;
+        }
+        .mobile-list{
+            list-style-type: none;
+        }
+        .mobile-menu-heading{
+            background-color: #f0fcff;
+        }
+        .mobile-menu-heading h2{
+            font-size: 18px;
+            line-height: 20px;
+            padding: 15px 12px;
+            color: #17b3e4;
+            text-transform: uppercase;
+        }
+        .mobile-head{
+            max-width: 90%;
+        }
+        .mobile-head h3{
+            font-size: 18px;
+            font-weight: 600;
+            color: #17b3e4;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .mobile-head p{
+            font-size: 18px;
+        }
+        .mobile-quote-button a{
+            color: #d81671 !important;
+            text-align: left;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            text-transform: none;
+        }
+        .mobile-menu-detail-box{
+            max-height: calc(100vh - 50px);
+            overflow: scroll;
+            padding-bottom: 100px !important;
+        }
+        .learning-centre-heading{
+            padding: 15px 0 8px 32px;
+            font-weight: 600;
+        }
+        .mobile-learning-centre>ul{
+            list-style-type: none;
+        }
+        .mobile-learning-centre>ul li{
+            padding: 5px;
+        }
+        .back-button svg{
+            position: relative;
+            top: 23px;
+            left: -40px;
+        }
+        .hide{
+            display: none !important;
         }
     }
 
