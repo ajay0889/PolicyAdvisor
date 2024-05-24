@@ -25,7 +25,7 @@ section>div {
 }
 
 @-webkit-keyframes fadeInDown {
-	0 {
+	0% {
 		opacity: 0;
 		transform: translateY(-700px)
 	}
@@ -42,7 +42,7 @@ section>div {
 }
 
 @keyframes fadeInDown {
-	0 {
+	0% {
 		opacity: 0;
 		transform: translateY(-700px)
 	}
